@@ -1,0 +1,32 @@
+From d05efd325c779944ca351c0354b000851ba17da5 Mon Sep 17 00:00:00 2001
+From: "Addisu Z. Taddese" <addisu@openrobotics.org>
+Date: Fri, 29 Mar 2024 15:00:46 -0500
+Subject: [PATCH] Fix pkgconfig installation so it works with
+ `CMAKE_STAGING_PREFIX`
+
+Signed-off-by: Addisu Z. Taddese <addisu@openrobotics.org>
+---
+ CMakeLists.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index acdfebf..2700b44 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -473,10 +473,11 @@ install(
+ # Generate the DART pkg-config
+ set(PC_CONFIG_IN ${DART_SOURCE_DIR}/cmake/dart.pc.in)
+ set(PC_CONFIG_OUT ${DART_BINARY_DIR}/cmake/dart.pc)
+-set(PC_CONFIG_INSTALL_DIR ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/pkgconfig)
++set(PC_CONFIG_INSTALL_DIR ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
++set(PC_CONFIG_INSTALL_ABS_DIR ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+ file(RELATIVE_PATH
+   RELATIVE_PATH_TO_INSTALL_PREFIX
+-  "${PC_CONFIG_INSTALL_DIR}"
++  "${PC_CONFIG_INSTALL_ABS_DIR}"
+   "${CMAKE_INSTALL_PREFIX}"
+ )
+ if(DART_VERBOSE)
+-- 
+2.43.0
+
