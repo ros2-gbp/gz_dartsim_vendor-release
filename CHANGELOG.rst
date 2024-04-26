@@ -2,6 +2,9 @@
 Changelog for package gz_dartsim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.0 (2024-04-25)
+------------------
+
 0.0.2 (2024-04-02)
 ------------------
 * Add dependency on fmt, patch pkgconfig installation
