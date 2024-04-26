@@ -11,7 +11,7 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.0.2</version>
+  <version>0.1.0</version>
   <description>
     Vendor package for the DART physics engine v6.13.2
   </description>
