@@ -2,6 +2,16 @@
 Changelog for package gz_dartsim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2024-11-26)
+------------------
+* Add check for system installed dartsim (`#6 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/6>`_)
+  * Check for system installed dart first.
+  * Update dart version and add extra debug message
+  * Add relaxed version matching when requested
+  ---------
+  Co-authored-by: Rhys Mainwaring <rhys.mainwaring@me.com>
+* Contributors: Øystein Sture
+
 0.0.2 (2024-04-02)
 ------------------
 * Add dependency on fmt, patch pkgconfig installation
