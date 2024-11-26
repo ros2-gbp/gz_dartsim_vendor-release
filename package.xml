@@ -11,7 +11,7 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.1.2</version>
+  <version>0.0.3</version>
   <description>
     Vendor package for the DART physics engine v6.13.2
   </description>
@@ -40,7 +40,9 @@
   <depend>libboost-dev</depend>
   <depend>libboost-system-dev</depend>
   <depend>libboost-regex-dev</depend>
-  <depend>liboctomap-dev</depend>
+  <!-- Octomap is an optional dependency. There seems to be an issue resolving
+    this key on the ROS buildfarm, so disabling it for now -->
+  <!-- <depend>octomap</depend> -->
   <depend>lz4</depend>
 
   <test_depend>ament_cmake_xmllint</test_depend>

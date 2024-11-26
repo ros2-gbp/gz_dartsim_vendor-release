@@ -2,7 +2,7 @@
 Changelog for package gz_dartsim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.1.2 (2024-11-26)
+0.0.3 (2024-11-26)
 ------------------
 * Add check for system installed dartsim (`#6 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/6>`_)
   * Check for system installed dart first.
@@ -11,15 +11,6 @@ Changelog for package gz_dartsim_vendor
   ---------
   Co-authored-by: Rhys Mainwaring <rhys.mainwaring@me.com>
 * Contributors: Øystein Sture
-
-0.1.1 (2024-06-25)
-------------------
-* Switch to using the liboctomap-dev key for a dependency. (`#5 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/5>`_)
-  This is now available in rosdep.
-* Contributors: Chris Lalancette
-
-0.1.0 (2024-04-25)
-------------------
 
 0.0.2 (2024-04-02)
 ------------------
