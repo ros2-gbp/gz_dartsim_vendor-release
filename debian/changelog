@@ -1,0 +1,56 @@
+ros-rolling-gz-dartsim-vendor (0.1.3-1noble) noble; urgency=high
+
+  * Merge pull request #9 <https://github.com/gazebo-release/gz_dartsim_vendor/issues/9> from gazebo-release/jrivero/bump_6_16
+    Bump dart vendor in rolling to 6.16.6
+  * Bump DART version to 6.16.6
+  * Update patch
+  * Contributors: Jose Luis Rivero
+
+ -- Addisu Taddese <addisu@intrinsic.ai>  Sun, 19 Apr 2026 22:00:00 -0000
+
+ros-rolling-gz-dartsim-vendor (0.1.2-1noble) noble; urgency=high
+
+  * Add check for system installed dartsim (#6 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/6>)
+    * Check for system installed dart first.
+    * Update dart version and add extra debug message
+    * Add relaxed version matching when requested
+    ---------
+    Co-authored-by: Rhys Mainwaring <mailto:rhys.mainwaring@me.com>
+  * Contributors: Øystein Sture
+
+ -- Addisu Taddese <addisu@intrinsic.ai>  Mon, 25 Nov 2024 23:00:00 -0000
+
+ros-rolling-gz-dartsim-vendor (0.1.1-1noble) noble; urgency=high
+
+  * Switch to using the liboctomap-dev key for a dependency. (#5 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/5>)
+    This is now available in rosdep.
+  * Contributors: Chris Lalancette
+
+ -- Addisu Taddese <addisu@intrinsic.ai>  Mon, 24 Jun 2024 22:00:00 -0000
+
+ros-rolling-gz-dartsim-vendor (0.1.0-1noble) noble; urgency=high
+
+
+
+ -- Addisu Taddese <addisu@intrinsic.ai>  Wed, 24 Apr 2024 22:00:00 -0000
+
+ros-rolling-gz-dartsim-vendor (0.0.2-1noble) noble; urgency=high
+
+  * Add dependency on fmt, patch pkgconfig installation
+  * Change version to 0.0.1
+  * Fix linter (#3 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/3>)
+  * Remove Octomap (#2 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/2>)
+    Octomap is an optional dependency. There seems to be an issue resolving
+    this key on the ROS buildfarm, so disabling it for now.
+    This also removes DART_BUILD_OSG cmake flag, which does not exist in 6.13.2
+  * Add README (#1 <https://github.com/gazebo-release/gazebo_dartsim_vendor/issues/1>)
+  * Rename to gz_dartsim_vendor
+  * Add license and contributing files
+  * Change name and update version
+  * Remove optional packages
+  * Initial import
+  * Contributors: Addisu Z. Taddese
+
+ -- Addisu Taddese <addisu@intrinsic.ai>  Mon, 01 Apr 2024 22:00:00 -0000
+
+
