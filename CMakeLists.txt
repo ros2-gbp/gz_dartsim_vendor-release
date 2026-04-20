@@ -3,8 +3,8 @@ project(gz_dartsim_vendor)
 
 # Project-specific settings
 set(LIB_VER_MAJOR 6)
-set(LIB_VER_MINOR 13)
-set(LIB_VER_PATCH 2)
+set(LIB_VER_MINOR 16)
+set(LIB_VER_PATCH 6)
 
 # Derived variables
 set(LIB_VER ${LIB_VER_MAJOR}.${LIB_VER_MINOR}.${LIB_VER_PATCH})
