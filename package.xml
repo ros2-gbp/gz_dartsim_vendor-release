@@ -11,9 +11,9 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <description>
-    Vendor package for the DART physics engine v6.13.2
+    Vendor package for the DART physics engine v6.16.6
   </description>
 
   <maintainer email="addisu@intrinsic.ai">Addisu Taddese</maintainer>
