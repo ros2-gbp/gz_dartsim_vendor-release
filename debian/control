@@ -1,0 +1,12 @@
+Source: ros-lyrical-gz-dartsim-vendor
+Section: misc
+Priority: optional
+Maintainer: Addisu Taddese <addisu@intrinsic.ai>
+Build-Depends: debhelper (>= 9.0.0), libassimp-dev, libboost-dev, libboost-regex-dev, libboost-system-dev, libbullet-dev, libccd-dev, libeigen3-dev, libfcl-dev, libfmt-dev, liblz4-dev, liboctomap-dev, libode-dev, libtinyxml2-dev, liburdfdom-dev, lz4, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-vendor-package, ros-lyrical-ament-cmake-xmllint <!nocheck>, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ros-workspace
+Homepage: https://dartsim.github.io/
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-gz-dartsim-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libassimp-dev, libboost-dev, libboost-regex-dev, libboost-system-dev, libbullet-dev, libccd-dev, libeigen3-dev, libfcl-dev, libfmt-dev, liblz4-dev, liboctomap-dev, libode-dev, libtinyxml2-dev, liburdfdom-dev, lz4, ros-lyrical-ros-workspace
+Description: Vendor package for the DART physics engine v6.16.6
